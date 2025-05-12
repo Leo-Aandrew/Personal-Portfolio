@@ -1,0 +1,25 @@
+{
+    "skills": [
+      { "id": 1, "name": "HTML" },
+      { "id": 2, "name": "CSS" },
+      { "id": 3, "name": "JavaScript" },
+      { "id": 4, "name": "React" }
+    ],
+    "projects": [
+      {
+        "id": 1,
+        "title": "To-Do App",
+        "description": "Manage daily tasks efficiently.",
+        "link": "https://github.com/yourname/todo-app"
+      }
+    ],
+    "internships": [
+      {
+        "id": 1,
+        "company": "TechOctanet",
+        "role": "Frontend Intern",
+        "duration": "Sep 2024 - Oct 2024"
+      }
+    ]
+  }
+  
