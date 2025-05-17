@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <div className="logo">Leo's Portfolio</div>
+      <div className="logo">LEO.</div>
       <nav className={`nav ${isMobileMenuOpen ? "open" : ""}`}>
         <a href="#about" onClick={toggleMenu}>About</a>
         <a href="#skills" onClick={toggleMenu}>Skills</a>
