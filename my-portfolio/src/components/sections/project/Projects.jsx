@@ -1,22 +1,23 @@
 import React, { useEffect, useState } from 'react';
-import API from '../../../api/api';
 import './Projects.css';
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    const fetchProjects = async () => {
-      try {
-        const res = await API.get('/projects');
-        setProjects(res.data);
-      } catch (err) {
-        console.error('Error fetching projects:', err);
-      }
-    };
+  const fetchProjects = async () => {
+    try {
+      const response = await fetch('db.json');
+      if (!response.ok) throw new Error('Network response was not ok');
+      const data = await response.json();
+      setProjects(data.projects);
+    } catch (err) {
+      console.error('Error fetching projects:', err);
+    }
+  };
 
-    fetchProjects();
-  }, []);
+  fetchProjects();
+}, []);
 
   return (
     <section className="projects-section" id='projects'>

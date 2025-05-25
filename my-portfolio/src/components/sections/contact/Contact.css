@@ -5,9 +5,11 @@
 }
 
 .contact-section h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 20px;
+  color: #ff6600;
 }
+
 
 .contact-form {
   max-width: 500px;
@@ -39,4 +41,10 @@
 .contact-form button:hover {
   background-color: black;
   color: orange;
+}
+
+@media (max-width: 600px) {
+  .contact-section h2{
+    font-size: 2rem;
+  }
 }

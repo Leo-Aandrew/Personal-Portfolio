@@ -1,22 +1,25 @@
 import React, { useEffect, useState } from 'react';
-import API from '../../../api/api';
 import './Experience.css';
 
 const Experience = () => {
   const [experienceData, setExperienceData] = useState([]);
 
   useEffect(() => {
-    const fetchExperience = async () => {
-      try {
-        const res = await API.get('/experience');
-        setExperienceData(res.data);
-      } catch (error) {
-        console.error('Error fetching experience data:', error);
+  const fetchExperience = async () => {
+    try {
+      const response = await fetch('db.json');
+      if (!response.ok) {
+        throw new Error('Failed to load JSON data');
       }
-    };
+      const data = await response.json();
+      setExperienceData(data.experience); // Assuming your data.json has a "experience" key
+    } catch (error) {
+      console.error('Error fetching experience data:', error);
+    }
+  };
 
-    fetchExperience();
-  }, []);
+  fetchExperience();
+}, []);
 
   return (
     <section className="experience-section" id='experiences'>

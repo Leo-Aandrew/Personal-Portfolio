@@ -1,23 +1,22 @@
 import React, { useEffect, useState } from 'react';
-import API from '../../../api/api';
 import './Skills.css';
 
 const Skills = () => {
   const [skills, setSkills] = useState([]);
 
-  useEffect(() => {
-    // Fetch skills from your API
-    const fetchSkills = async () => {
-      try {
-        const response = await API.get('/skills');
-        setSkills(response.data);
-      } catch (error) {
-        console.error('Failed to fetch skills:', error);
-      }
-    };
+useEffect(() => {
+  const fetchSkills = async () => {
+    try {
+      const response = await fetch('db.json');
+      const data = await response.json();
+      setSkills(data.skills);
+    } catch (error) {
+      console.error('Failed to fetch skills:', error);
+    }
+  };
 
-    fetchSkills();
-  }, []);
+  fetchSkills();
+}, []);
 
   const groupSkills = (category) => {
     return skills

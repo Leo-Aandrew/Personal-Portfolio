@@ -42,14 +42,14 @@
     "title": "HR Management System",
     "date": "January 2025",
     "description": "Built a HR management system for simplifying the HR practices in Employee Management, Payroll Processing, and Leave Management using the React.js framework.",
-    "image": "./src/assets/HRMS.png",
+    "image": "HRMS.png",
     "demoLink": "https://leo-aandrew.github.io/Salve-HRMS/"
   },
   {
     "title": "KKR Website Clone",
     "date": "September 2024",
     "description": "Built a responsive clone of the KKR website using HTML, CSS, and JavaScript, optimizing front-end performance and enhancing user experience.",
-    "image": "./src/assets/KKR_Clone.png",
+    "image": "KKR_Clone.png",
     "demoLink": "https://leo-aandrew-kkr-task-1.netlify.app/"
   }
   ]

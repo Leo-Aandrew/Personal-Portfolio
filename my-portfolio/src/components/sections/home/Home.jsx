@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const Home = () => {
   return (
@@ -32,6 +32,9 @@ const Home = () => {
           </a>
           <a href="https://www.linkedin.com/in/leo-aandrew/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin className="social-icon" />
+          </a>
+          <a href="mailto:andrewleo173@gmail.com" target="_blank" rel="noopener noreferrer" >
+            <FaEnvelope className="social-icon" />
           </a>
         </div>
       </div>
