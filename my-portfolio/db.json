@@ -1,25 +1,57 @@
 {
-    "skills": [
-      { "id": 1, "name": "HTML" },
-      { "id": 2, "name": "CSS" },
-      { "id": 3, "name": "JavaScript" },
-      { "id": 4, "name": "React" }
-    ],
-    "projects": [
-      {
-        "id": 1,
-        "title": "To-Do App",
-        "description": "Manage daily tasks efficiently.",
-        "link": "https://github.com/yourname/todo-app"
-      }
-    ],
-    "internships": [
-      {
-        "id": 1,
-        "company": "TechOctanet",
-        "role": "Frontend Intern",
-        "duration": "Sep 2024 - Oct 2024"
-      }
-    ]
+  "skills": [
+  { "name": "Java", "category": "Languages" },
+  { "name": "Python", "category": "Languages" },
+  { "name": "HTML", "category": "Frontend" },
+  { "name": "CSS", "category": "Frontend" },
+  { "name": "JavaScript", "category": "Frontend" },
+  { "name": "React Framework", "category": "Frontend" },
+  { "name": "Nodejs", "category": "Backend" },
+  { "name": "Express", "category": "Backend" },
+  { "name": "REST API", "category": "Backend" },
+  { "name": "JWT Authentication", "category": "Backend" },
+  { "name": "MySql", "category": "Database" },
+  { "name": "MongoDB", "category": "Database" }
+  ],
+
+  "experience": [
+    {
+      "role": "Web Developer Intern",
+      "company": "SIMPERY PRIVATE LIMITED",
+      "location": "Online",
+      "duration": "January 2025 – Present",
+      "responsibilities": [
+        "Worked on CRUD API, MySQL Database and used Postman API for testing the backend process.",
+        "Currently working on Frontend using React.js to develop a Salve HR Management System Software to handle HR processes efficiently."
+      ]
+    },
+    {
+      "role": "Front-End Developer Intern",
+      "company": "KARTHIKESH ROBOTICS PRIVATE LIMITED",
+      "location": "Online",
+      "duration": "September 2024 – October 2024",
+      "responsibilities": [
+        "Created responsive clones of the KKR and Robu.in websites using HTML, CSS, and JavaScript, focusing on design and functionality.",
+        "Designed an E-commerce website in Figma, prioritizing user-friendly layouts and engaging visuals."
+      ]
+    }
+  ],
+
+  "projects": [
+  {
+    "title": "HR Management System",
+    "date": "January 2025",
+    "description": "Built a HR management system for simplifying the HR practices in Employee Management, Payroll Processing, and Leave Management using the React.js framework.",
+    "image": "./src/assets/HRMS.png",
+    "demoLink": "https://leo-aandrew.github.io/Salve-HRMS/"
+  },
+  {
+    "title": "KKR Website Clone",
+    "date": "September 2024",
+    "description": "Built a responsive clone of the KKR website using HTML, CSS, and JavaScript, optimizing front-end performance and enhancing user experience.",
+    "image": "./src/assets/KKR_Clone.png",
+    "demoLink": "https://leo-aandrew-kkr-task-1.netlify.app/"
   }
-  
+  ]
+
+}

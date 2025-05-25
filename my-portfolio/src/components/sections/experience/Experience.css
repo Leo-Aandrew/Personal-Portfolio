@@ -1,0 +1,79 @@
+.experience-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.experience-heading {
+  font-size: 2.5rem;
+  color: #ff7f00;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+.experience-card {
+  background-color: #ffffff;
+  border-left: 5px solid #ff7f00;
+  border-top: 5px solid #ff7f00;
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 700px;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.experience-card h3 {
+  font-size: 1.8rem;
+  color: #222;
+}
+
+.company {
+  font-weight: 600;
+  color: #333;
+  margin-top: 5px;
+}
+
+.duration {
+  color: #777;
+  font-size: 0.95rem;
+  margin: 5px 0 10px 0;
+}
+
+.experience-card ul {
+  list-style: disc;
+  margin-left: 20px;
+  padding-left: 0;
+  color: #555;
+}
+
+.experience-card li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .experience-card {
+    padding: 20px;
+  }
+
+  .experience-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .experience-heading {
+    font-size: 2rem;
+  }
+
+  .experience-container {
+    display: flex;
+    flex-direction: column;
+  }
+}

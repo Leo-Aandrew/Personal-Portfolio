@@ -1,8 +1,13 @@
 import React from 'react';
 import './styles/App.css';
-import Header from './components/common/Header.jsx';
-import Home from './components/sections/Home.jsx';
-import About from './components/sections/About.jsx';
+import Header from './components/common/header/Header.jsx';
+import Home from './components/sections/home/Home.jsx';
+import About from './components/sections/about/About.jsx';
+import Skills from './components/sections/skills/Skills.jsx';
+import Experience from './components/sections/experience/Experience.jsx';
+import Projects from './components/sections/project/Projects.jsx';
+import Contact from './components/sections/contact/Contact.jsx';
+import Footer from './components/common/footer/Footer.jsx';
 
 function App() {
   
@@ -12,6 +17,11 @@ function App() {
       <Header />
       <Home />
       <About />
+      <Skills />
+      <Experience />
+      <Projects />
+      <Contact />
+      <Footer />
     </div>
   )
 }
