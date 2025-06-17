@@ -12,7 +12,7 @@ const Experience = () => {
         throw new Error('Failed to load JSON data');
       }
       const data = await response.json();
-      setExperienceData(data.experience); // Assuming your data.json has a "experience" key
+      setExperienceData(data.experience); 
     } catch (error) {
       console.error('Error fetching experience data:', error);
     }

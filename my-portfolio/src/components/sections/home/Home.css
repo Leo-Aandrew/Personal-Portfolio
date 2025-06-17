@@ -119,7 +119,7 @@
   transform: scale(1.1);
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .hero-section {
     flex-direction: column;

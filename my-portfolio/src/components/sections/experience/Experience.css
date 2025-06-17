@@ -58,7 +58,7 @@
   line-height: 1.5;
 }
 
-/* Responsive */
+
 @media (max-width: 600px) {
   .experience-card {
     padding: 20px;

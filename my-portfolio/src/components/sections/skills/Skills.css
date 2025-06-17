@@ -48,7 +48,7 @@
   line-height: 1.6;
 }
 
-/* Animations */
+
 @keyframes slideDown {
   from {
     opacity: 0;
@@ -71,7 +71,7 @@
   }
 }
 
-/* Responsive */
+
 @media (max-width: 600px) {
   .skills-heading {
     font-size: 2rem;

@@ -1,19 +1,74 @@
 {
-  "skills": [
-  { "name": "Java", "category": "Languages" },
-  { "name": "Python", "category": "Languages" },
-  { "name": "HTML", "category": "Frontend" },
-  { "name": "CSS", "category": "Frontend" },
-  { "name": "JavaScript", "category": "Frontend" },
-  { "name": "React Framework", "category": "Frontend" },
-  { "name": "Nodejs", "category": "Backend" },
-  { "name": "Express", "category": "Backend" },
-  { "name": "REST API", "category": "Backend" },
-  { "name": "JWT Authentication", "category": "Backend" },
-  { "name": "MySql", "category": "Database" },
-  { "name": "MongoDB", "category": "Database" }
+  "education": [
+    {
+      "degree": "B.E. Computer Science and Engineering",
+      "institution": "NPR College of Engineering and Technology",
+      "duration": "2022 - 2026",
+      "score": "CGPA: 8.4 / 10"
+    },
+    {
+      "degree": "Higher Secondary Leaving Certificate (HSLC) - 12th",
+      "institution": "SSM Matriculation Higher Secondary School",
+      "duration": "2022",
+      "score": "Percentage: 84%"
+    },
+    {
+      "degree": "Secondary School Leaving Certificate (SSLC) - 10th",
+      "institution": "SSM Matriculation Higher Secondary School",
+      "duration": "2020",
+      "score": "Percentage: 80%"
+    }
   ],
-
+  "skills": [
+    {
+      "name": "Java",
+      "category": "Languages"
+    },
+    {
+      "name": "Python",
+      "category": "Languages"
+    },
+    {
+      "name": "HTML",
+      "category": "Frontend"
+    },
+    {
+      "name": "CSS",
+      "category": "Frontend"
+    },
+    {
+      "name": "JavaScript",
+      "category": "Frontend"
+    },
+    {
+      "name": "React Framework",
+      "category": "Frontend"
+    },
+    {
+      "name": "Nodejs",
+      "category": "Backend"
+    },
+    {
+      "name": "Express",
+      "category": "Backend"
+    },
+    {
+      "name": "REST API",
+      "category": "Backend"
+    },
+    {
+      "name": "JWT Authentication",
+      "category": "Backend"
+    },
+    {
+      "name": "MySql",
+      "category": "Database"
+    },
+    {
+      "name": "MongoDB",
+      "category": "Database"
+    }
+  ],
   "experience": [
     {
       "role": "Web Developer Intern",
@@ -36,22 +91,20 @@
       ]
     }
   ],
-
   "projects": [
-  {
-    "title": "HR Management System",
-    "date": "January 2025",
-    "description": "Built a HR management system for simplifying the HR practices in Employee Management, Payroll Processing, and Leave Management using the React.js framework.",
-    "image": "HRMS.png",
-    "demoLink": "https://leo-aandrew.github.io/Salve-HRMS/"
-  },
-  {
-    "title": "KKR Website Clone",
-    "date": "September 2024",
-    "description": "Built a responsive clone of the KKR website using HTML, CSS, and JavaScript, optimizing front-end performance and enhancing user experience.",
-    "image": "KKR_Clone.png",
-    "demoLink": "https://leo-aandrew-kkr-task-1.netlify.app/"
-  }
+    {
+      "title": "HR Management System",
+      "date": "January 2025",
+      "description": "Built a HR management system for simplifying the HR practices in Employee Management, Payroll Processing, and Leave Management using the React.js framework.",
+      "image": "HRMS.png",
+      "demoLink": "https://leo-aandrew.github.io/Salve-HRMS/"
+    },
+    {
+      "title": "KKR Website Clone",
+      "date": "September 2024",
+      "description": "Built a responsive clone of the KKR website using HTML, CSS, and JavaScript, optimizing front-end performance and enhancing user experience.",
+      "image": "KKR_Clone.png",
+      "demoLink": "https://leo-aandrew-kkr-task-1.netlify.app/"
+    }
   ]
-
 }

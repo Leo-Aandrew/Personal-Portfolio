@@ -6,8 +6,8 @@ const About = () => {
     <section className="about-section" id="about">
       <h2 className="about-title">About Me</h2>
       <p className="about-description">
-        Hi, I'm <span className="highlight">Leo Aandrew</span>, a passionate and creative front-end developer
-        currently pursuing my third year in Computer Science Engineering at NPR College of Engineering and
+        Hi, I'm <span className="highlight">Leo Aandrew</span>, a passionate and creative Full Stack Developer
+        currently pursuing my final year in Computer Science and Engineering at NPR College of Engineering and
         Technology. I specialize in building responsive and user-friendly web applications using 
         <span className="highlight"> HTML</span>, <span className="highlight">CSS</span>, 
         <span className="highlight"> JavaScript</span>, and <span className="highlight">React</span>. Merging Creativity with Code to Build Unique Web Solutions.
