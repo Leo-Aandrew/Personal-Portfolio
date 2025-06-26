@@ -1,6 +1,6 @@
 .projects-section {
   padding: 60px 20px;
-  background: #f9f9f9;
+  background: #ffffff;
   text-align: center;
 }
 
@@ -21,7 +21,7 @@
   margin: 10px;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 3px 12px #000000;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -33,6 +33,8 @@
 .project-image {
   width: 100%;
   height: 200px;
+  padding: 15px;
+  border-radius: 25px;
   object-fit: cover;
 }
 

@@ -8,17 +8,17 @@ const Home = () => {
       <div className="hero-left">
         <div className="image-wrapper">
           <div className="circle-bg"></div>
-          <img src="leo_image1.jpg" alt="LEO" className="hero-image" />
+          <img src="my_img.png" alt="LEO" className="hero-image" />
         </div>
       </div>
 
       <div className="hero-right">
         <h1 className="hero-title">
-          Hello I’m <br /><span>Leo Aandrew G,</span><br /> Frontend Developer
+          Hello I’m <br /><span>Leo Aandrew G,</span><br /> Full Stack Developer
         </h1>
 
         <div className="hero-buttons">
-          <a href="mailto:andrewleo173@gmail.com">
+          <a href="#contact">
             <button className="hero-button">Hire Me</button>
           </a>
           <a href="leo_resume.pdf" download>

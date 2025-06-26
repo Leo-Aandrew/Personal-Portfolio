@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Header.css";
 
 const Header = () => {
@@ -7,6 +7,10 @@ const Header = () => {
   const toggleMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
+
+  useEffect(() => {
+    document.body.style.overflow = isMobileMenuOpen ? 'hidden' : 'auto';
+  }, [isMobileMenuOpen]);
 
   return (
     <header className="header">
