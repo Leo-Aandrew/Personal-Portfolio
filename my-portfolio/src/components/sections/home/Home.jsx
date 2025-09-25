@@ -21,7 +21,7 @@ const Home = () => {
           <a href="#contact">
             <button className="hero-button">Hire Me</button>
           </a>
-          <a href="leo_resume.pdf" download>
+          <a href="LEO_AANDREW_G - Resume.pdf" download>
             <button className="hero-button resume">Resume</button>
           </a>
         </div>

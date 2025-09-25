@@ -1,16 +1,22 @@
+/* ===== Section wrapper ===== */
 .education-section {
-  background: #ffffff;
+  background: #fff;
   color: #333;
   padding: 60px 20px;
   text-align: center;
+  font-family: "Segoe UI", sans-serif;
 }
 
+/* ===== Heading ===== */
 .education-heading {
-  font-size: 2rem;
+  font-size: 2.2rem;
+  font-weight: 700;
   color: #ff6600;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
+  letter-spacing: 1px;
 }
 
+/* ===== Timeline container ===== */
 .timeline {
   position: relative;
   max-width: 1200px;
@@ -18,116 +24,113 @@
   padding: 20px 0;
 }
 
+/* Vertical center line */
 .timeline::after {
   content: '';
   position: absolute;
-  width: 6px;
-  background-color: #ff6600;
   top: 0;
   bottom: 0;
   left: 50%;
-  margin-left: -3px;
+  width: 6px;
+  background-color: #ff6600;
+  transform: translateX(-50%);
 }
 
+/* ===== Timeline items ===== */
 .timeline-item {
-  padding: 20px 30px;
   position: relative;
   width: 50%;
+  padding: 20px 40px;
+  box-sizing: border-box;
 }
 
-.timeline-item.left {
-  left: 0;
-}
+/* Place left/right */
+.timeline-item.left  { left: 0; }
+.timeline-item.right { left: 50%; }
 
-.timeline-item.right {
-  left: 50%;
-}
-
+/* Circle on the center line */
 .timeline-item::after {
   content: '';
   position: absolute;
-  width: 25px;
-  height: 25px;
-  background-color: white;
+  top: 25px;
+  width: 26px;
+  height: 26px;
+  background: #fff;
   border: 4px solid #ff6600;
   border-radius: 50%;
-  top: 15px;
   z-index: 1;
 }
 
-.timeline-item.left::after {
-  right: -13px;
-}
+.timeline-item.left::after  { right: -13px; }
+.timeline-item.right::after { left: -13px; }
 
-.timeline-item.right::after {
-  left: -13px;
-}
-
+/* ===== Card content ===== */
 .timeline-content {
-  background-color: #ffffff;
+  background: #ffffff;
+  border-left: 6px solid #ff6600;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  padding: 25px 20px;
   color: #000;
-  padding: 20px;
-  border-radius: 10px;
-  border-left: 5px solid #ff6600;
-  box-shadow: 3px 3px 12px #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* 🔑 Force same height across cards */
+  min-height: 220px;
 }
 
 .timeline-content h3 {
-  font-size: 1.5rem;
-  margin-bottom: 5px;
+  font-size: 1.6rem;
+  font-weight: 600;
   color: #0e1c2f;
+  margin-bottom: 8px;
 }
 
 .timeline-duration {
   font-size: 1rem;
   font-style: italic;
   color: #777;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   display: block;
 }
 
 .timeline-institute,
 .timeline-score {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: #444;
+  margin-bottom: 6px;
 }
 
+/* ===== Responsive: stack on small screens ===== */
 @media (max-width: 768px) {
   .timeline::after {
-    left: 31px;
+    left: 28px; /* move center line to the left */
   }
 
   .timeline-item {
     width: 100%;
+    left: 0;
     padding-left: 70px;
     padding-right: 25px;
-  }
-
-  .timeline-item.right {
-    left: 0%;
+    margin-bottom: 40px;
   }
 
   .timeline-item::after {
-    left: 15px;
+    left: 14px; /* circle aligns with new line position */
+    right: auto;
+  }
+
+  .timeline-content {
+    min-height: 180px;
   }
 
   .timeline-content h3 {
-  font-size: 1.3rem;
-  margin-bottom: 5px;
-  color: #0e1c2f;
-}
+    font-size: 1.3rem;
+  }
 
-.timeline-duration {
-  font-size: 0.8rem;
-  font-style: italic;
-  color: #777;
-  margin-bottom: 5px;
-  display: block;
-}
-
-.timeline-institute,
-.timeline-score {
-  font-size: 1rem;
-  color: #444;
-}
+  .timeline-institute,
+  .timeline-score {
+    font-size: 1rem;
+  }
 }
